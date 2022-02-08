@@ -1,0 +1,115 @@
+.foot{
+    display:grid;   
+    grid-template-columns: auto auto auto;
+    justify-content:center;
+    background-color: #000;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.fa-building,
+.fa-phone-alt,
+.fa-route,
+.fa-mail-bulk{
+    color: #fff;
+    font-size: 30px;
+}
+
+.contactof{
+    margin-top:2rem;
+}
+
+.contactof>li{
+    padding:10px;
+    color: #fff;
+    list-style: none;
+    
+}
+
+
+.img-log{
+    padding-top: 10px;
+    width: 12rem;
+}
+
+.textor{
+    color: #fff;
+    width: 35rem;
+    margin-top:2rem;
+    font-size: 20px 
+}
+
+.sello{
+    color: #fff
+}
+
+
+.redes{
+   
+    display: inline-block;
+  
+    }
+    .fa-whatsapp-square,
+    .fa-facebook-square,
+    .fa-instagram-square,
+    .fa-twitter-square,
+    .fa-youtube-square
+    {
+      color: #fff;
+      cursor: pointer;
+      padding: 5px;
+      font-size: 60px;    
+    }
+    .fa-whatsapp-square:hover{
+        color: rgb(37, 211, 102)
+    }
+    .fa-facebook-square:hover{
+        color: rgb(66, 103, 178)
+    }
+    .fa-instagram-square:hover{
+        color: rgb(225, 48, 108)
+    }
+    .fa-twitter-square:hover{
+        color: rgb(26, 161, 242)
+    }
+    .fa-youtube-square:hover{
+        color: rgb(252, 0, 0)
+    }
+
+    @media(max-width: 990px){
+
+    }
+
+    @media(max-width: 360px){
+        .foot{
+             
+            grid-template-columns: auto ;
+          
+        }
+
+        .textor{
+            color: #fff;
+            width: 15rem;
+            margin-top:0rem;
+            font-size: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            justify-content: center;
+        }
+
+        .fa-whatsapp-square,
+        .fa-facebook-square,
+        .fa-instagram-square,
+        .fa-twitter-square,
+        .fa-youtube-square
+        {
+            
+          
+           
+            font-size: 40px;    
+        }
+    }
+
+

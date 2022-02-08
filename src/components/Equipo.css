@@ -1,0 +1,40 @@
+.equpipo{
+    margin: auto 0;
+    justify-content: center;   
+    display:grid;   
+    grid-template-columns: auto auto auto;
+    justify-content:space-between; 
+}
+
+
+.equipocs{
+    width: 8rem;
+    background-color: blue
+}
+
+.table{
+    margin-top: 1rem;
+    left: 0;
+    right: 0
+}
+
+
+.formulario{
+    margin-top: 6rem;
+}
+
+.formulario>p{
+    width: 28rem;
+    margin: 0 auto;
+    justify-content: center;
+    border-top: 1px solid #111;
+    font-size:21px
+}
+
+@media(max-width: 360px){
+    .formulario>p{
+        width: 18rem;
+        font-size:14px
+      
+    }
+}

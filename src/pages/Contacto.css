@@ -1,0 +1,64 @@
+.contact-msg{   
+    width: 45rem;
+    margin-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.contact-msg>p{
+    font-size: 22px;
+}
+
+.contact-form{
+
+    margin-top: 2rem;
+    
+}
+
+.contact-inp,
+.contact-tex{
+    display: block;    
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width:66rem;
+    height:5rem;
+    margin-top: 1rem;
+    
+}
+
+.contact-tex{
+    height:14rem;
+}
+
+.btn-primary{
+    width:66rem;
+    margin-bottom: 1.8rem;
+}
+
+
+@media(max-width: 450px){
+    .contact-msg{   
+        width: 22rem;
+        margin-top: 6rem;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+    }
+
+    .contact-msg>p{
+        font-size: 15px;
+    }
+
+    .contact-inp,
+    .contact-tex{
+        width:22rem;
+    }    
+    
+    
+    .btn-primary{
+        width:22rem;
+    }    
+        
+}
