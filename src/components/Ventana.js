@@ -26,10 +26,9 @@ const Ventana = ({children, estado, cambiarEstado, titulo}) =>{
 export default Ventana;
 
 const Overlay = styled.div`
-    background-color: red;
     width: 100vw;
     height: 100vh;
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, .7);
@@ -40,16 +39,22 @@ const Overlay = styled.div`
 `;
 
 const ContenedorModal = styled.div`
-    width: 90rem;
+    width: 38rem;
     min-height: 720px;
     background: #fff;
     position: relative;
     border-radius: 3px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding: 20px;
+    padding: 10px;
  
-
+    @media(max-width: 414px){
+        width: 22rem;
+        padding: 8px;
+        min-height: 620px;
+      
+    }
 `;
+
 
 const EncabezadoModal = styled.div`
     display: flex;
@@ -66,17 +71,18 @@ const EncabezadoModal = styled.div`
     }
 
     
-    @media(max-width: 360px){
-        margin-top:180PX;
-       
+    @media(max-width: 414px){
+        margin-bottom: 0px;
+        margin-top:15PX;      
+        
     }
     
 `;
 
 const BotonCerrar = styled.button`
-    position: absolute;
+    position:absolute;
     top: 1rem;
-    right: 5rem;
+    right: 1rem;
 
     width:30px;
     height:30px;
@@ -96,11 +102,11 @@ const BotonCerrar = styled.button`
         height: 100%;
     }   
 
-     @media(max-width: 360px){
+     @media(max-width: 414px){
         position: relative;
         top: 0rem;
         right: 0rem;
-        width:80px;
+        width:30px;
         
         
        

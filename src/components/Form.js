@@ -1,4 +1,5 @@
 import React from 'react';
+//import { Link } from 'react-router-dom';
 import './Equipo.css';
 
 const Form = ({cliente, setCliente}) =>{  
@@ -16,7 +17,7 @@ const Form = ({cliente, setCliente}) =>{
             headers: {'Content-Type':'application/json'},
             body: JSON.stringify(cliente)
         }
-        fetch('http://localhost:9000/api', requestInit)
+        fetch('http://localhost:3001/', requestInit)
         .then((res)=> res.text())
         //.then((res)=> setCliente(res))
 
@@ -29,8 +30,9 @@ const Form = ({cliente, setCliente}) =>{
             direccion: '',
             ciudad: '',
             conyugue: '',
-            cunyuguetel: ''
-        })
+            conyuguetel: '',
+
+        })    
         
     }      
     return(
@@ -72,7 +74,11 @@ const Form = ({cliente, setCliente}) =>{
                 <label htmlFor="conyuguetel" className="form-label">Conyugue telefono</label>
                 <input value={cliente.conyuguetel}  name="conyuguetel" onChange={handleChange} type="text" id="conyuguetel" className="form-control"/>   
             </div>
-            <button type="submit" className="btn btn-primary">enviar</button>
+         
+            {/*<button  type="submit" className="btn btn-primary">enviar</button>*/}
+       
+
+            
         </form>
         
         </div>

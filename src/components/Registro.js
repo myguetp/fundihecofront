@@ -14,7 +14,7 @@ const Registro = () => {
     direccion: '',
     ciudad: '',
     conyugue: '',
-    cunyuguetel: ''
+    conyuguetel: ''
   })  
    
   //mostrar los datos  
@@ -26,7 +26,7 @@ const Registro = () => {
   //mostrar los datos
   useEffect(() =>{
     const getClientes = () =>{
-       fetch('http://localhost:9000/api')
+       fetch('http://localhost:3001/')
       .then((res)=> res.json())
       .then((res)=>setClientes(res))
     }

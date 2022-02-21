@@ -9,11 +9,11 @@ import styled from 'styled-components';
 import './Servicio.css';
 import Ventana from '../components/Ventana';
 import Footer from '../components/Footer';
+import { Link } from 'react-router-dom';
 
 
 
-const Servicios = () =>{
-
+const Servicios = () =>{    
     const [show,setShow]=React.useState(false)
 
 
@@ -21,6 +21,8 @@ const Servicios = () =>{
     const [estadoModal2, cambiarEstadoModal2] = useState(false);
     const [estadoModal3, cambiarEstadoModal3] = useState(false);
     const [estadoModal4, cambiarEstadoModal4] = useState(false);
+    const [estadoModal5, cambiarEstadoModal5] = useState(false);
+    const [estadoModal6, cambiarEstadoModal6] = useState(false);
   
 
     return (
@@ -30,7 +32,7 @@ const Servicios = () =>{
             <img className="serv-imag" src={juridica} alt="asesoria-juridica"></img>        
            
             <ContenedorBotones>
-                <Boton onClick={() => cambiarEstadoModal1(!estadoModal1)}>Información</Boton>
+                <Boton className="btn btn-primary " onClick={() => cambiarEstadoModal1(!estadoModal1)}>Información</Boton>
             </ContenedorBotones>
         </div>
         <Ventana
@@ -41,7 +43,7 @@ const Servicios = () =>{
         >
                  
                <div>
-                    <ul>
+                    <ul className="servicioss">
                         <li><strong>Derecho administrativo</strong></li>
                        
                         {
@@ -66,8 +68,9 @@ const Servicios = () =>{
                             show? <p>El derecho laboral se encarga de regularizar, mediante reglas jurídicas, las relaciones que establecen a partir de trabajo. Este conjunto 
                             de reglas debe garantizar el cumplimiento de las obligaciones de las partes que intervienen en una relación de trabajo.</p>:null
                         }
-                        <button onClick={()=>setShow(true)}>mostrar</button>
-                        <button onClick={()=>setShow(false)}>ocultar</button>
+                        <button className="btn btn-info" onClick={()=>setShow(true)}>mostrar</button>
+                        <button className="btn btn-light" onClick={()=>setShow(false)}>ocultar</button>
+                        <Link to="/register">Me interesa</Link>
                     </ul>               
 
                </div>
@@ -82,7 +85,7 @@ const Servicios = () =>{
 
            
             <ContenedorBotones>
-                <Boton onClick={() => cambiarEstadoModal2(!estadoModal2)}>Información</Boton>
+                <Boton className="btn btn-primary " onClick={() => cambiarEstadoModal2(!estadoModal2)}>Información</Boton>
             </ContenedorBotones>
         </div>
         <Ventana
@@ -91,7 +94,7 @@ const Servicios = () =>{
             titulo = "Seguros de vida (FundihecoSAS)" >
                  
                  <div>
-                    <ul>
+                    <ul  className="servicioss">
                         <li><strong>Por fallecimiento del titular</strong></li>
         
                         {
@@ -112,9 +115,9 @@ const Servicios = () =>{
                             show?<p>Es un dinero que se da a su conyuge posterior a su fallecimiento esto con el fin de no dejar desamparada a su conyugue en 
                             esos dificiles momentos y pueda tener una forma de sustentarse mientras realiza los procesos de sucesión</p>:null
                         }
-                        <button onClick={()=>setShow(true)}>mostrar</button>
-                        <button onClick={()=>setShow(false)}>ocultar</button>
-                       
+                        <button className="btn btn-info" onClick={()=>setShow(true)}>mostrar</button>
+                        <button className="btn btn-light" onClick={()=>setShow(false)}>ocultar</button>
+                        <Link to="/register">Me interesa</Link>
                     </ul>               
 
                </div>
@@ -128,7 +131,7 @@ const Servicios = () =>{
 
            
             <ContenedorBotones>
-                <Boton onClick={() => cambiarEstadoModal3(!estadoModal3)}>Información</Boton>
+                <Boton className="btn btn-primary " onClick={() => cambiarEstadoModal3(!estadoModal3)}>Información</Boton>
             </ContenedorBotones>
         </div>
         <Ventana
@@ -136,7 +139,7 @@ const Servicios = () =>{
             cambiarEstado = {cambiarEstadoModal3}
             titulo = "Tramites frente al ministerio de defensa (FundihecoSAS)" >
             <div>
-                    <ul>
+                    <ul  className="servicioss">
                         <li><strong>Pensiones de supervivencia</strong></li>
         
                         {
@@ -156,9 +159,9 @@ const Servicios = () =>{
                             show?<p>Se le dara un apoyo y guia al momento de realizar el tramite de pension en las entidades de FFMM y Ponal para que sea un
                              proceso agil y seguro</p>:null
                         }
-                        <button onClick={()=>setShow(true)}>mostrar</button>
-                        <button onClick={()=>setShow(false)}>ocultar</button>
-                       
+                        <button className="btn btn-info" onClick={()=>setShow(true)}>mostrar</button>
+                        <button className="btn btn-light" onClick={()=>setShow(false)}>ocultar</button>
+                        <Link to="/register">Me interesa</Link>
                     </ul>               
 
                </div>
@@ -166,21 +169,21 @@ const Servicios = () =>{
         </Ventana>  
           {/* asesoria en salud  */}
 
-          <div className="serviciop" onClick={() => cambiarEstadoModal3(!estadoModal3)}>
+          <div className="serviciop" onClick={() => cambiarEstadoModal4(!estadoModal4)}>
             <h3>Asesoria tramites de salud</h3>
             <img className="serv-imag" src={salud} alt="seguros-vida"></img> 
 
            
             <ContenedorBotones>
-                <Boton onClick={() => cambiarEstadoModal3(!estadoModal3)}>Información</Boton>
+                <Boton className="btn btn-primary" onClick={() => cambiarEstadoModal4(!estadoModal4)}>Información</Boton>
             </ContenedorBotones>
         </div>
         <Ventana
-            estado = {estadoModal3}
-            cambiarEstado = {cambiarEstadoModal3}
+            estado = {estadoModal4}
+            cambiarEstado = {cambiarEstadoModal4}
             titulo = "Tramites frente al ministerio de defensa (FundihecoSAS)" >
             <div>
-                    <ul>
+                    <ul  className="servicioss">
                         <li><strong>Ruta de atención</strong></li>
         
                         {
@@ -200,9 +203,9 @@ const Servicios = () =>{
                         {
                             show?<p>en casos especiales se le atendera y ayudara para sus procesos medicos  </p>:null
                         }
-                        <button onClick={()=>setShow(true)}>mostrar</button>
-                        <button onClick={()=>setShow(false)}>ocultar</button>
-                       
+                        <button className="btn btn-info" onClick={()=>setShow(true)}>mostrar</button>
+                        <button className="btn btn-light" onClick={()=>setShow(false)}>ocultar</button>
+                        <Link to="/register">Me interesa</Link>
                     </ul>               
 
                </div>
@@ -211,21 +214,21 @@ const Servicios = () =>{
 
         {/* servicio funerario */}
 
-        <div className="serviciop" onClick={() => cambiarEstadoModal4(!estadoModal4)}>
+        <div className="serviciop" onClick={() => cambiarEstadoModal5(!estadoModal5)}>
             <h3>Servicios funerarios</h3>
             <img className="serv-imag" src={funerario} alt="seguros-vida"></img> 
 
             <ContenedorBotones>
-                <Boton onClick={() => cambiarEstadoModal4(!estadoModal4)}>Información</Boton>
+                <Boton className="btn btn-primary " onClick={() => cambiarEstadoModal5(!estadoModal5)}>Información</Boton>
             </ContenedorBotones>
         </div>
         <Ventana
-            estado = {estadoModal4}
-            cambiarEstado = {cambiarEstadoModal4}
+            estado = {estadoModal5}
+            cambiarEstado = {cambiarEstadoModal5}
             titulo = "Servicio Funerario (FundihecoSAS)" >
 
         <div>
-                    <ul>
+                    <ul  className="servicioss">
                         <li><strong>Auxilio funerario</strong></li>
         
                         {
@@ -253,9 +256,9 @@ const Servicios = () =>{
                         {
                             show?<p>Se le dara una guia y acompañamiento para que este tramite sea algo facil de realizar </p>:null
                         }
-                        <button onClick={()=>setShow(true)}>mostrar</button>
-                        <button onClick={()=>setShow(false)}>ocultar</button>
-                       
+                        <button className="btn btn-info" onClick={()=>setShow(true)}>mostrar</button>
+                        <button className="btn btn-light" onClick={()=>setShow(false)}>ocultar</button>
+                        <Link to="/register">Me interesa</Link>
                     </ul>               
 
                </div>    
@@ -264,21 +267,21 @@ const Servicios = () =>{
         </Ventana>  
         {/* servicio funerario */}
 
-        <div className="serviciop" onClick={() => cambiarEstadoModal4(!estadoModal4)}>
+        <div className="serviciop" onClick={() => cambiarEstadoModal6(!estadoModal6)}>
             <h3>Bienestar</h3>
             <img className="serv-imag" src={terserizar} alt="seguros-vida"></img> 
 
             <ContenedorBotones>
-                <Boton onClick={() => cambiarEstadoModal4(!estadoModal4)}>Información</Boton>
+                <Boton className="btn btn-primary " onClick={() => cambiarEstadoModal6(!estadoModal6)}>Información</Boton>
             </ContenedorBotones>
         </div>
         <Ventana
-            estado = {estadoModal4}
-            cambiarEstado = {cambiarEstadoModal4}
+            estado = {estadoModal6}
+            cambiarEstado = {cambiarEstadoModal6}
             titulo = "Bienestar (FundihecoSAS)" >
 
         <div>
-                    <ul>
+                    <ul  className="servicioss">
                         <li><strong>AInformación permanente de alianzas con mindefensa</strong></li>
         
                         {
@@ -304,13 +307,12 @@ const Servicios = () =>{
                         {
                             show?<p>Se dara una ayuda a a aquellos afiliados que tengan algun emprendimiento por medio de nuestrois aliados </p>:null
                         }
-                        <button onClick={()=>setShow(true)}>mostrar</button>
-                        <button onClick={()=>setShow(false)}>ocultar</button>
-                       
+                        <button className="btn btn-info" onClick={()=>setShow(true)}>mostrar</button>
+                        <button className="btn btn-light" onClick={()=>setShow(false)}>ocultar</button>
+                        <Link to="/register">Me interesa</Link>
                     </ul>               
 
-               </div>    
-                 
+               </div>                     
  
         </Ventana>  
 

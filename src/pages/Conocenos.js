@@ -13,13 +13,13 @@ const Conocenos = () =>{
         <div className="presentaxion">
             <div className="presentazion">
                 <div>
-                <h3 >Mision</h3>
+                <h3 >Misión</h3>
                     <p>Liderar procesos de tipo cultural, económico, político y social dirigidos a las reservas de las fuerzas militares, policía nacional y sus familias
                     con énfasis en miembros de la fuerza pública víctimas del conflicto, con el fin de mejorar su calidad de vida.
                     </p>
                 </div> 
                 <div>   
-                <h3>Vision</h3>
+                <h3>Visión</h3>
                     <p>
                     Agrupar para el año 2024 a las reservas activas de las fuerzas militares y policía nacional sin distinción de grados, en un proceso de apoyo mutuo que permita una 
                     atención directa y personalizada para solucionar los problemas de tipo social, económico, político, cultural y jurídico que las aquejan.

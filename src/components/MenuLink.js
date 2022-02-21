@@ -22,14 +22,13 @@ const MenuLink = () =>{
                 </li>
                 <li className="nav-item">
                 <Link className="enlac" to="/service">Servicios</Link>
-                </li>              
-           
-                <li className="nav-item">
+                </li>         
+                 <li className="nav-item">
                 <Link className="enlac" to="/contact">Contacto</Link>
-                </li>    
+                </li>       
                 <li className="nav-item">
-                <Link className="enlac" to="/base">Afiliación</Link>
-                </li> 
+                <Link className="enlac" to="/register">Registrarse</Link>
+                </li>    
                 
             </ul>
             </div>

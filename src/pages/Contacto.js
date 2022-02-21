@@ -71,7 +71,7 @@ const Contacto = () =>{
                onBlur={handleBlur}
                onChange={handleChange} value={form.comments} required></textarea>
                {errors.comments && <strong className="infoe">{errors.comments}</strong>}
-               <input className="btn btn-primary" type="submit" value="Enviar"/>
+               <input className="btn btn-primary " type="submit" value="Enviar"/>
                 
            </form> 
            <Footer />     

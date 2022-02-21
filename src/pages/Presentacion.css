@@ -31,6 +31,10 @@
    
 }
 
+.presentacion>h1{
+    font-weight: bold;
+}
+
 .presentacion>p{
     font-weight: 600;
     font-size:22px;
@@ -66,6 +70,23 @@
        
     }
 
+}
+
+@media(max-width: 820){
+    .presentacion{
+        background-color: rgb(128, 128, 128);
+        margin-top: 0rem;   
+        width: 8rem;    
+        height: 92%;
+  
+    }
+
+    .presentacion>p{
+        font-weight: 100;
+        font-size:10px;
+        padding: 10px;
+
+    }
 }
 
 @media(max-width: 450px){

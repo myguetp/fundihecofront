@@ -7,10 +7,46 @@
     background-color: aliceblue;
     margin-top: 5px;
 }
+
+.serviciop>h3{
+    font-weight:bold;
+    text-transform: capitalize;
+}
 .serv-imag{
-    width: 18rem;
+    width: 22rem;
+    height:12rem
+}
+
+.servicioss{
+
+    width: 30rem;
+}
+
+.servicioss>li{
+    list-style: none;
+    display: flex;
+    text-transform:capitalize;
+    font-weight: bold;
+
+}
+
+.servicioss>p{
+    font-size: 18px;
+    text-align: left;  
 }
 
 
+@media(max-width: 450px){
+    .servicioss{
 
+        width: 20rem;
+    }
+
+    .servicioss>li{
+        font-size: 18px;
+    }
+    .servicioss>p{
+        font-size: 12px;
+    }
+}
 

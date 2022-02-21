@@ -1,44 +1,32 @@
-import React,{useState, useEffect} from 'react';
+import React,{useState} from 'react';
 //import Afiliados from '../components/Afiliados';
 import Footer from '../components/Footer';
 import Form from '../components/Form';
-
-
+import Reparacion from '../components/Reparacion';
 
 const Registrarse = () => {
-    const [cliente, setCliente] =useState({
-        nombre: '',
-        cedula: '',
-        entidad: '',
-        correo: '',
-        celular: '',
-        direccion: '',
-        ciudad: '',
-        conyugue: '',
-        cunyuguetel: ''
-      })   
-   
-  //mostrar los datos  
-  const [clientes, setClientes] =useState([])
   
-  //mostrar los datos
-  useEffect(() =>{
-    const getClientes = () =>{
-       fetch('http://localhost:9000/api')
-      .then((res)=> res.json())
-      .then((res)=>setClientes(res))
-    }
-    getClientes()
-  },[]) 
+  const [cliente, setCliente] =useState({
+    nombre: '',
+    cedula: '',
+    entidad: '',
+    correo: '',
+    celular: '',
+    direccion: '',
+    ciudad: '',
+    conyugue: '',
+    conyuguetel: ''
+  })   
+  
 
   return (
     <div>
         <div className="container">
             <div className="row">
                 <div>
-                {/*<h3>Lista de Afiliados</h3>               
-                <Afiliados clientes={clientes} />*/}
-                <br></br>
+                <h3>Lista de Afiliados</h3>               
+                {/*<Afiliados cliente={cliente}  setCliente={setCliente} clientes={clientes} setListUpdated={setListUpdated} />
+                */}<br></br>
                 <br></br>
                 <br></br>
                 </div>
@@ -46,7 +34,7 @@ const Registrarse = () => {
                 <h3>Formulario de Afiliados</h3>
                 <Form cliente={cliente} setCliente={setCliente}/>
                 </div>
-
+                <Reparacion />
             </div>
         </div>
         <Footer />

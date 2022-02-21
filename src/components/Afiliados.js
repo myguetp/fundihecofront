@@ -7,7 +7,7 @@ const Afiliados = ({cliente, setCliente, clientes, setListUpdated}) =>{
             method: 'DELETE',
         
         }
-        fetch('http://localhost:9000/api/' +id, requestInit)
+        fetch('http://localhost:3001/' +id, requestInit)
         .then((res)=> res.text())
         //.then((res)=> setCliente(res))
 
@@ -21,7 +21,7 @@ const Afiliados = ({cliente, setCliente, clientes, setListUpdated}) =>{
             body: JSON.stringify(cliente)
         
         }
-        fetch('http://localhost:9000/api/' +id, requestInit)
+        fetch('http://localhost:3001/' +id, requestInit)
         .then((res)=> res.text())
         //.then((res)=> setCliente(res))
 
@@ -34,7 +34,7 @@ const Afiliados = ({cliente, setCliente, clientes, setListUpdated}) =>{
             direccion: '',
             ciudad: '',
             conyugue: '',
-            cunyuguetel: ''
+            conyuguetel: ''
         })
 
         setListUpdated(true)
@@ -70,13 +70,13 @@ const Afiliados = ({cliente, setCliente, clientes, setListUpdated}) =>{
                             <td>{cliente.direccion}</td>
                             <td>{cliente.ciudad}</td>
                             <td>{cliente.conyugue}</td>
-                            <td>{cliente.conyugueCel}</td>
+                            <td>{cliente.conyuguetel}</td>
                             <td>
                                 <div className="mb-3">
                                     <button onClick={() => handleDelete(cliente.id)} className="btn btn-danger">Eliminar</button>
                                 </div>
                                 <div className="mb-3">
-                                    <button onClick={() => handleUpdate(cliente.id)} className="btn btn-dark">Eliminar</button>
+                                    <button onClick={() => handleUpdate(cliente.id)} className="btn btn-dark">Editar</button>
                                 </div>
                             </td>
                             
