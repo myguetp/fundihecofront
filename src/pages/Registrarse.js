@@ -1,46 +1,50 @@
-import React,{useState} from 'react';
-//import Afiliados from '../components/Afiliados';
-import Footer from '../components/Footer';
-import Form from '../components/Form';
-import Reparacion from '../components/Reparacion';
+import React, {useState} from "react";
+//import AfiliaList from "../components/AfiliaList";
+import CrudForm from "../components/CrudForm";
+//import CrudTable from "../components/CrudTable";
+import Fotpage from "../components/Fotpage";
+import { helpHttp } from "../helper/helphttp";
+
 
 const Registrarse = () => {
-  
-  const [cliente, setCliente] =useState({
-    nombre: '',
-    cedula: '',
-    entidad: '',
-    correo: '',
-    celular: '',
-    direccion: '',
-    ciudad: '',
-    conyugue: '',
-    conyuguetel: ''
-  })   
-  
 
+  const [db, setDb] = useState([]);
+  const [dataToEdit, setDataToEdit] = useState(null);
+
+  let api = helpHttp();
+  let url = "u397070750_fundihecoapp/app";
+   
+  const createData = (data) =>{
+      data.id = Date.now();
+      //console.log(data);   
+
+      let options ={
+        body:data,
+        headers:{"content-type":"application/json"},       
+      };
+      
+      api.post(url,options).then(res =>{
+        console.log(res);
+        if(!res.err){
+          setDb([...db, res]);
+        }else{
+          console.log("error de renderizado");
+        }
+      });
+     
+  };
+ 
   return (
-    <div>
-        <div className="container">
-            <div className="row">
-                <div>
-                <h3>Lista de Afiliados</h3>               
-                {/*<Afiliados cliente={cliente}  setCliente={setCliente} clientes={clientes} setListUpdated={setListUpdated} />
-                */}<br></br>
-                <br></br>
-                <br></br>
-                </div>
-                <div>
-                <h3>Formulario de Afiliados</h3>
-                <Form cliente={cliente} setCliente={setCliente}/>
-                </div>
-                <Reparacion />
-            </div>
-        </div>
-        <Footer />
-
-    </div>
-    )
+    <>
+        
+        <CrudForm
+        createData={createData} 
+        //updateData={updateData} 
+        dataToEdit={dataToEdit} 
+        setDataToEdit={setDataToEdit}/>       
+        <Fotpage />
+    </>
+  );
 };
 
 export default Registrarse;

@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from '../components/Footer';
+import Fotpage from '../components/Fotpage';
 import { useContact } from '../hooks/useContact';
 import './Contacto.css';
 
@@ -17,24 +17,22 @@ const validationsForm = (form) =>{
     
 
     if(!form.name.trim()){
-        errors.name = "Hi, please type your [Name] this is required";
+        errors.name = "Hola, por favor escriba su nombre este campo es requerido";
     }
 
     if(!form.email.trim()){
-        errors.email = "Hi, please type your [Email] this is required";
+        errors.email = "Hi, por favor escriba su email es requerido";
     }else if(!regexEmail.test(form.email.trim())){
-        errors.email  =  "Hi, please type your Email correctly"
+        errors.email  =  "Hola por favor escriba su correo correctamente"
     }
 
     if(!form.subject.trim()){
-        errors.subject = "Hi, please type the [Subject] this is required";
+        errors.subject = "hola, por faver escriba su asunto es requerido";
     }
 
     if(!form.comments.trim()){
-        errors.comments = "Hi, please type youre message [Comments] this is required";
+        errors.comments = "hola, por favor escriba algun comentario";
     }
-
-
 
     return errors;
 }
@@ -74,7 +72,7 @@ const Contacto = () =>{
                <input className="btn btn-primary " type="submit" value="Enviar"/>
                 
            </form> 
-           <Footer />     
+            <Fotpage />    
        </div>
    );
        

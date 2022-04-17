@@ -35,8 +35,9 @@
 
 @media(max-width: 450px){
     .contact-msg{   
+       
         width: 22rem;
-        margin-top: 6rem;
+        margin-top: 1rem;
         margin-left: auto;
         margin-right: auto;
         justify-content: center;
@@ -44,6 +45,7 @@
 
     .contact-msg>p{
         font-size: 15px;
+       
     }
 
     .contact-inp,

@@ -1,0 +1,51 @@
+
+.tituloregs{
+    margin-top: 5rem;
+    background-color: gray;
+    width: 35rem;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    
+}
+
+.termino{
+    width: 55rem;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.contacti{
+    font-weight: bold;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: 70rem;
+    margin-top: 1rem;
+}
+
+@media(max-width: 990px){
+    .contacti{
+        width: 50rem;
+    }
+}
+
+@media(max-width: 415px){
+    .tituloregs{
+        width: 18rem
+    }
+
+    .termino{
+        width: 18rem;
+        font-size: 13px;
+        
+    }
+
+    .contacti{
+        width: 22rem;
+        margin-top: 1rem;
+    }
+    
+}

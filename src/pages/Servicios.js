@@ -8,13 +8,13 @@ import salud from '../asset/img/salud.png'
 import styled from 'styled-components';
 import './Servicio.css';
 import Ventana from '../components/Ventana';
-import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
+import Fotpage from '../components/Fotpage';
 
 
 
 const Servicios = () =>{    
-    const [show,setShow]=React.useState(false)
+    const [show,setShow]=React.useState(false);
 
 
     const [estadoModal1, cambiarEstadoModal1] = useState(false);
@@ -318,7 +318,7 @@ const Servicios = () =>{
 
 
         {/* footer */}
-        <Footer />
+      <Fotpage/>
 
     </div>
     

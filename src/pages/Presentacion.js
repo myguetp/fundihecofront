@@ -4,7 +4,7 @@ import ejercito from '../asset/img/ejercito.png'
 import fac from '../asset/img/fac.png'
 import policia from '../asset/img/policia.png'
 import './Presentacion.css'
-import Footer from '../components/Footer';
+import Fotpage from '../components/Fotpage'
 
 
 
@@ -29,7 +29,7 @@ const Presentacion = () => {
     </div>  
 
     </section>
-   <Footer />   
+   <Fotpage/>   
     </div>  
       
     );

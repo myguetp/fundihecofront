@@ -15,4 +15,4 @@ const Reparacion = () => {
   )
 }
 
-export default Reparacion
+export default Reparacion;

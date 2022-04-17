@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from '../components/Footer';
+import Fotpage from '../components/Fotpage';
 import './Conocenos.css';
 
 
@@ -35,7 +35,7 @@ const Conocenos = () =>{
                  
             </div>
          
-            <Footer />
+            <Fotpage />
                             
         </div>
     )

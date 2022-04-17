@@ -25,10 +25,10 @@ const MenuLink = () =>{
                 </li>         
                  <li className="nav-item">
                 <Link className="enlac" to="/contact">Contacto</Link>
-                </li>       
+                </li>                      
                 <li className="nav-item">
-                <Link className="enlac" to="/register">Registrarse</Link>
-                </li>    
+                <Link className="enlac" to="/regis">Registro</Link>
+                </li>   
                 
             </ul>
             </div>

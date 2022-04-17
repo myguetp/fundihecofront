@@ -11,6 +11,11 @@
 .serviciop>h3{
     font-weight:bold;
     text-transform: capitalize;
+    background-color: rgb(129, 127, 127);
+    padding: 1rem;
+    color: #fff;
+    border: 4px solid rgb(187, 185, 185);
+    
 }
 .serv-imag{
     width: 22rem;
