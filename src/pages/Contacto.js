@@ -45,8 +45,8 @@ const Contacto = () =>{
      
        <div className="contact">
         <div className="contact-msg" >
-            <p>Puedes enviarnos un mensaje solo tienes que escribir tu nombre el correo el asunto a tratar y como podemos ayudarle 
-                o tambien se puede comunicar con nosotros por cualquiera de nuestras redes sociales 
+            <p>Puedes enviarnos un mensaje, solo tienes que escribir tu nombre, el correo, el asunto a tratar y como podemos ayudarle 
+            o también se puede comunicar con nosotros por cualquiera de nuestras redes sociales 
             </p>
         </div>
           <form className="contact-form" onSubmit={handleSubmit} action="https://formsubmit.co/atencion@fundiheco-sas.com" method="POST">

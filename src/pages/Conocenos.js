@@ -28,8 +28,8 @@ const Conocenos = () =>{
                 <div>   
                 <h3>Nuestro equipo</h3>
                     <p>
-                    Contamos con personal altamente capacitado el cual esta dispuesto a ayudarle en cualquiera de nuestros servicios al igual tambien contamos con un 
-                    excelente grupo de empresas aliadas las cuales son un apoyo para nosotros y para nuestros afiliados siempre buscamos al excelencia en el servicio
+                    Contamos con personal altamente capacitado el cual está dispuesto a ayudarle en cualquiera de nuestros servicios, al igual también contamos con un 
+                    excelente grupo de empresas aliadas las cuales son un apoyo para nosotros y para nuestros afiliados siempre buscamos a la excelencia en el servicio
                     </p>
                 </div> 
                  

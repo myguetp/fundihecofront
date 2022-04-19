@@ -77,10 +77,10 @@ const Registro = () =>{
        <div className="contacto">
         
         <h3 className="tituloregs">Formulario de afiliación fundiheco SAS</h3>
-        <p className="termino">La información suministrada a continuación por usted sera de uso exlusivo para la empresa Fundiheco-sas al momento de llenar el formulario y dar enviar
-        o el envio de estos datos por alguno de nuestros canales como contacto correo electronico con terninacion @fundiheco-sas o el whatsapp correspondiente
-        al numero +57 320 495 0075 da autorización para el proceso de libranza correspondiente, al correo suministrado le llegara un documento en pdf en los siguientes
-        3 dias posteriores al llenado de los datos para mas informacion revise nuestros <Link to="/conditions">terminos y condiciones</Link> </p>
+        <p className="termino">La información suministrada a continuación por usted será de uso exclusivo para la empresa Fundiheco-SAS al momento de llenar el formulario y dar enviar
+        o el envió de estos datos por alguno de nuestros canales como contacto correo electrónico con terminación @fundiheco-SAS o el WhatsApp correspondiente
+        al número +57 320 495 0075 da autorización para el proceso de libranza correspondiente, al correo suministrado le llegara un documento en PDF en los siguientes
+        3 días posteriores al llenado de los datos para más información revise nuestros <Link to="/conditions">terminos y condiciones</Link> </p>
     
           <form className="contact-form" onSubmit={handleSubmit} action="https://formsubmit.co/atencion@fundiheco-sas.com" method="POST">
                
@@ -89,7 +89,7 @@ const Registro = () =>{
                onChange={handleChange} value={form.nombre} required/>
                {errors.name && <strong className="infoe">{errors.nombre}</strong>}
 
-               <input className="contacti" type="number" name="cedula" placeholder="Escriba su numero de cedula"
+               <input className="contacti" type="number" name="cedula" placeholder="Escriba su número de cédula"
                onBlur={handleBlur}
                onChange={handleChange} value={form.cedula} required/>
                {errors.name && <strong className="infoe">{errors.cedula}</strong>}
@@ -104,7 +104,7 @@ const Registro = () =>{
                onChange={handleChange} value={form.correo} required />
                {errors.email && <strong className="infoe">{errors.correo}</strong>}
                
-               <input className="contacti" type="number" name="celular" placeholder="Escriba su numero de celular "
+               <input className="contacti" type="number" name="celular" placeholder="Escriba su número de celular "
                onBlur={handleBlur}
                onChange={handleChange} value={form.celular} required/>
                {errors.name && <strong className="infoe">{errors.celular}</strong>}
@@ -119,12 +119,12 @@ const Registro = () =>{
                onChange={handleChange} value={form.ciudad} required/>
                {errors.name && <strong className="infoe">{errors.ciudad}</strong>}
 
-               <input className="contacti" type="text" name="conyugue" placeholder="Escriba el nombre de su conyugue o familiar "
+               <input className="contacti" type="text" name="conyugue" placeholder="Escriba el nombre de su cónyugue o familiar "
                onBlur={handleBlur}
                onChange={handleChange} value={form.conyugue} required/>
                {errors.name && <strong className="infoe">{errors.conyugue}</strong>}
                
-               <input className="contacti" type="number" name="conyuguecel" placeholder="Escriba su numero de celular de su familiar "
+               <input className="contacti" type="number" name="conyuguecel" placeholder="Escriba su número de celular de su familiar "
                onBlur={handleBlur}
                onChange={handleChange} value={form.conyuguecel} required/>
                {errors.name && <strong className="infoe">{errors.conyuguecel}</strong>}

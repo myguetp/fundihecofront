@@ -98,22 +98,22 @@ const Servicios = () =>{
                         <li><strong>Por fallecimiento del titular</strong></li>
         
                         {
-                            show?<p>La familia o a quien indique en el momento de recinir el seguro sera el beneficiado de un monto de dinero el cual 
-                            le sera entregado posterior al fallecimiento del titular</p>:null
+                            show?<p>La familia o a quien indique en el momento de recinir el seguro será el beneficiado de un monto de dinero, el cual 
+                            le será entregado posterior al fallecimiento del titular</p>:null
                         }
 
                         <li><strong>Por incapacidad</strong></li>
                     
                         {
-                            show?<p>Al adquirir el seguro podra obtener una cantidad de dinero el monto de este depende de lo que indique un juez o medico
-                            quien valore la gravedad de la incapaciad que se haya provocado</p>:null
+                            show?<p>Al adquirir el seguro podrá obtener una cantidad de dinero, el monto de este depende de lo que indique un juez o médico
+                            quien valore la gravedad de la incapacidad que se haya provocado</p>:null
                         }
 
                         <li><strong>Por incapacidad</strong></li>
                         
                         {
-                            show?<p>Es un dinero que se da a su conyuge posterior a su fallecimiento esto con el fin de no dejar desamparada a su conyugue en 
-                            esos dificiles momentos y pueda tener una forma de sustentarse mientras realiza los procesos de sucesión</p>:null
+                            show?<p>Es un dinero que se da a su cónyuge posterior a su fallecimiento, esto con el fin de no dejar desamparada a su cónyuge en 
+                            esos difíciles momentos y pueda tener una forma de sustentarse mientras realiza los procesos de sucesión</p>:null
                         }
                         <button className="btn btn-info" onClick={()=>setShow(true)}>mostrar</button>
                         <button className="btn btn-light" onClick={()=>setShow(false)}>ocultar</button>
@@ -126,7 +126,7 @@ const Servicios = () =>{
         {/* tramites prestacionales  */}
 
         <div className="serviciop" onClick={() => cambiarEstadoModal3(!estadoModal3)}>
-            <h3>Tramites prestacionales</h3>
+            <h3>Trámites prestacionales</h3>
             <img className="serv-imag" src={tramites} alt="seguros-vida"></img> 
 
            
@@ -143,21 +143,21 @@ const Servicios = () =>{
                         <li><strong>Pensiones de supervivencia</strong></li>
         
                         {
-                            show?<p>se ayuda a ralizar el debido tramite de supervicencia frente a la entidad correspondiente indicandole que documentos
-                            debe de presentar o en caso de demoras u otro inconveniente se le ayudara para que pueda realizar su tramo de forma correcta y agil</p>:null
+                            show?<p>se ayuda a realizar el debido trámite de supervivencia frente a la entidad correspondiente indicándole que documentos
+                            debe de presentar o en caso de demoras u otro inconveniente, se le ayudara para que pueda realizar su tramo de forma correcta y ágil</p>:null
                         }
 
-                        <li><strong>Tramites Institucionales</strong></li>
+                        <li><strong>Trámites Institucionales</strong></li>
                     
                         {
-                            show?<p>En cualquier tramite institucional se le brindara una guia y apoyo al momento de realizar el tramite en cuestion</p>:null
+                            show?<p>En cualquier trámite institucional se le brindará una, guia y apoyo al momento de realizar el trámite en cuestión</p>:null
                         }
 
                         <li><strong>Pensiones de sociales FFMM. Y Ponal</strong></li>
                         
                         {
-                            show?<p>Se le dara un apoyo y guia al momento de realizar el tramite de pension en las entidades de FFMM y Ponal para que sea un
-                             proceso agil y seguro</p>:null
+                            show?<p>Se le dará un apoyo y guía al momento de realizar el trámite de pensión en las entidades de FFMM y Ponal para que sea un
+                             proceso ágil y seguro</p>:null
                         }
                         <button className="btn btn-info" onClick={()=>setShow(true)}>mostrar</button>
                         <button className="btn btn-light" onClick={()=>setShow(false)}>ocultar</button>
@@ -170,7 +170,7 @@ const Servicios = () =>{
           {/* asesoria en salud  */}
 
           <div className="serviciop" onClick={() => cambiarEstadoModal4(!estadoModal4)}>
-            <h3>Asesoria tramites de salud</h3>
+            <h3>Asesoría trámites de salud</h3>
             <img className="serv-imag" src={salud} alt="seguros-vida"></img> 
 
            
@@ -187,21 +187,21 @@ const Servicios = () =>{
                         <li><strong>Ruta de atención</strong></li>
         
                         {
-                            show?<p>Se le ayudara en caso de tener inconvenientes en sacar una cita,que le entreguen algun resultado
-                            u algun otro proceso de salud que tenga</p>:null
+                            show?<p>Se le ayudará en caso de tener inconvenientes en sacar una cita, que le entreguen algún resultado
+                            u algún otro proceso de salud que tenga</p>:null
                         }
 
-                        <li><strong>Asesoria juridica</strong></li>
+                        <li><strong>Asesoría jurídica</strong></li>
                     
                         {
-                            show?<p>Tenemos un grupo de abogados dispuestos a ayudarle con sus caasos medicos ellos haran una anlisis de su caso y le ayudaran 
+                            show?<p>Tenemos un grupo de abogados dispuestos a ayudarle con sus casos medicos, ellos harán una análisis de su caso y le ayudarán 
                             en el proceso legal que se deba realizar</p>:null
                         }
 
                         <li><strong>Asistencia en casos especiales</strong></li>
                         
                         {
-                            show?<p>en casos especiales se le atendera y ayudara para sus procesos medicos  </p>:null
+                            show?<p>en casos especiales se le atenderá y ayudará para sus procesos médicos  </p>:null
                         }
                         <button className="btn btn-info" onClick={()=>setShow(true)}>mostrar</button>
                         <button className="btn btn-light" onClick={()=>setShow(false)}>ocultar</button>
@@ -232,29 +232,29 @@ const Servicios = () =>{
                         <li><strong>Auxilio funerario</strong></li>
         
                         {
-                            show?<p>Es un servicio que se le dara a su familia para cubrir los requerimientos que se encesiten en el momento
-                            en que el afiliado fallezca  </p>:null
+                            show?<p>Es un servicio que se le dará a su familia para cubrir los requerimientos que se necesiten en el momento
+                            en que el afiliado fallezca </p>:null
                         }
 
                         <li><strong>Asesoría para prestación del servicio</strong></li>
                     
                         {
                             show?<p>acompañaremos a su familia en ese doloroso proceso para que se cumpla debidamente con todos los requisitos
-                            que debe tener el velorio de un heroe de la patria tener un debido cajon una corona de flores y todo aquello
+                            que debe tener el velorio de un héroe de la patria, tener un debido cajon, una corona de flores y todo aquello
                             que sea necesario</p>:null
                         }
 
-                        <li><strong>Tramite de servicios médicos a supervivientes</strong></li>
+                        <li><strong>Trámite de servicios médicos a supervivientes</strong></li>
                         
                         {
-                            show?<p>se brindara una asesoria y acompañamiento para que sus familiares obtengan de forma rapida y efectiva 
+                            show?<p>se brindará una asesoría y acompañamiento para que sus familiares obtengan de forma rápida y efectiva 
                             los documentos que deban ser entregados por su fallecimiento</p>:null
                         }
 
-                        <li><strong>Acompañamiento en tramite pensión de supervivencia</strong></li>
+                        <li><strong>Acompañamiento en trámite pensión de supervivencia</strong></li>
                         
                         {
-                            show?<p>Se le dara una guia y acompañamiento para que este tramite sea algo facil de realizar </p>:null
+                            show?<p>Se le dará una guía y acompañamiento para que este trámite sea algo fácil de realizar </p>:null
                         }
                         <button className="btn btn-info" onClick={()=>setShow(true)}>mostrar</button>
                         <button className="btn btn-light" onClick={()=>setShow(false)}>ocultar</button>
@@ -282,30 +282,30 @@ const Servicios = () =>{
 
         <div>
                     <ul  className="servicioss">
-                        <li><strong>AInformación permanente de alianzas con mindefensa</strong></li>
+                        <li><strong>Información permanente de alianzas con mindefensa</strong></li>
         
                         {
-                            show?<p>SE brindara un puente de comunicación entre nuestros afiliados y el ministerio de defensa en el cual estaran ams cerca 
-                            y habra una comunicación mas amena entre las partes </p>:null
+                            show?<p>Se brindará un puente de comunicación entre nuestros afiliados y el ministerio de defensa en el cual estarán más cerca 
+                            y habrá una comunicación más amena entre las partes </p>:null
                         }
 
-                        <li><strong>Alianzas de nuestra instituciones aliadas</strong></li>
+                        <li><strong>Alianzas de nuestras instituciones aliadas</strong></li>
                     
                         {
-                            show?<p>Tendra el beneficio de disfrutar de nuestras empresas aliadas y poder hacer uso de las mismas</p>:null
+                            show?<p>Tendrá el beneficio de disfrutar de nuestras empresas aliadas y poder hacer uso de las mismas</p>:null
                         }
 
                         <li><strong>Cursos de capacitación</strong></li>
                         
                         {
-                            show?<p>Por intermedio de nuestras empresas aliadas se dictaran cursos a nuestros afiliados para que estos puedan 
+                            show?<p>Por intermedio de nuestras empresas aliadas se dictarán cursos a nuestros afiliados para que estos puedan 
                             surgir en sus emprendimientos o metas de estudio que se tengan propuesta</p>:null
                         }
 
                         <li><strong>Procesos para emprendimientos</strong></li>
                         
                         {
-                            show?<p>Se dara una ayuda a a aquellos afiliados que tengan algun emprendimiento por medio de nuestrois aliados </p>:null
+                            show?<p>Se dará una ayuda a aquellos afiliados que tengan algún emprendimiento por medio de nuestros aliados  </p>:null
                         }
                         <button className="btn btn-info" onClick={()=>setShow(true)}>mostrar</button>
                         <button className="btn btn-light" onClick={()=>setShow(false)}>ocultar</button>
